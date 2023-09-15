@@ -1,0 +1,14 @@
+<%== pagy_bootstrap_nav(@pagy) if @pagy.pages > 1 %>
+
+<% @posts.each do |post| %>   
+    <div class="card border-success mb-3" style="max-width: 18rem;">
+      <div class="card-header bg-transparent border-success"><%= post.created_at %></div>
+      <div class="card-body text-success">
+        <h5 class="card-title"><%= post.title %></h5>
+        <p class="card-text"><%= post.body %></p>
+      </div>
+      <div class="card-footer bg-transparent border-success">
+        <%= link_to "Show", post_path(post), class: "btn btn-outline-primary" %>
+      </div>
+    </div>
+<% end %>
