@@ -3,12 +3,21 @@
 <% @posts.each do |post| %>   
     <div class="card border-success mb-3" style="max-width: 18rem;">
       <div class="card-header bg-transparent border-success"><%= post.created_at %></div>
-      <div class="card-body text-success">
+      <div class="card-body">
         <h5 class="card-title"><%= post.title %></h5>
         <p class="card-text"><%= post.body %></p>
       </div>
       <div class="card-footer bg-transparent border-success">
         <%= link_to "Show", post_path(post), class: "btn btn-outline-primary" %>
+        <% if post.comments.any? %>
+        <button type="button" class="btn btn-outline-primary position-relative">
+            <i class="fa-regular fa-comment fa-2xl"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              <%= post.comments.count %>
+              <span class="visually-hidden">unread messages</span>
+            </span>
+        </button>
+        <% end %>
       </div>
     </div>
 <% end %>

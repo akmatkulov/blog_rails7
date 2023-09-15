@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
 
-  resources :posts
+  #Вложенный маршрут
+  resources :posts do
+    resources :comments
+  end
+
+
   root "pages#home"
  
 end
