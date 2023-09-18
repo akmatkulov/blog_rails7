@@ -1,24 +1,43 @@
-# README
+# Project Title
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Simple overview of use/purpose.
 
-Things you may want to cover:
+## Description
 
-* Ruby version
+An in-depth paragraph about your project and overview of use.
 
-* System dependencies
+## Getting Started
 
-* Configuration
+### Dependencies
 
-* Database creation
+### Installing
 
-* Database initialization
+* How/where to download your program
+* Any modifications needed to be made to files/folders
 
-* How to run the test suite
+### Executing program
 
-* Services (job queues, cache servers, search engines, etc.)
+* How to run the program
+* Step-by-step bullets
+```
+code blocks for commands
+```
 
-* Deployment instructions
+## Help
 
-* ...
+Any advise for common problems or issues.
+```
+command to run if program contains helper info
+```
+
+## Authors
+
+## Version History
+
+* 0.2
+    * Various bug fixes and optimizations
+    * See [commit change]() or See [release history]()
+* 0.1
+    * Initial Release
+
+## License
